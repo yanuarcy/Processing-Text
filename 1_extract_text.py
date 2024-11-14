@@ -10,11 +10,11 @@ from nltk.tokenize import word_tokenize
 import re
 
 
-path = 'Data/Data_Review_Aplikasi_BRIMO_1204210044.csv'
+path = 'Data/review_gopay_newest_sort.csv'
 df = pd.read_csv(path)
 
-print(df['review'])
+print(df['content'])
 
-df['review'].to_csv('Output/1_extract_text.csv', index=False)
+df['content'].to_csv('Output/1_extract_text.csv', index=False)
 
 print("Kolom 'review' berhasil disimpan ke 'Output/1_extract_text.csv'")
